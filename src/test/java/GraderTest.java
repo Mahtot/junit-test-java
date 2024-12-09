@@ -48,7 +48,7 @@ public class GraderTest {
 
     @Test
     void zeroShouldReturnF(){
-        assertTrue(grader.determineLetterGrade(0) == 'f');
+        assertEquals('f', grader.determineLetterGrade(0));
     }
 @Test
     void negativeOneShouldReturnIllegalArgumentsException(){
